@@ -1,13 +1,15 @@
 #!/usr/bin/env python
-import random, string
 
-def rand_str(num, length = 7):
-    f = open('Activation_code.txt', 'wb')
+import string,random
+
+def random_factory(num,length):
+    f = open('rd','wr')
     for i in range(num):
-        chars = string.letters + string.digits
-        s = [random.choice(chars) for i in range(length)]
-        f.write(''.join(s) + '\n')
+        s = string.letters + string.digits
+        n = [random.choice(s) for i in range(length)]
+        f.write(''.join(n)+'\n')
     f.close()
 
 if __name__ == '__main__':
-    rand_str(200)
+    random_factory(200,6)
+

@@ -1,14 +1,18 @@
 #!/usr/bin/env python
 
-import random, string
+import random,string
 
-def rand_str(num,length):
-    f = open('randomnum.txt','wb')
+def random_num(num,length):
+    f = open('yz.txt','wb')
     for i in range(num):
-        chars = string.letters + string.digits
-        s = [random.choice(chars) for i in range(length)]
-        f.write(''.join(s)+'\n')
+        characters = string.letters + string.digits
+        ran = [random.choice(characters) for i in range(length)]
+        f.write(''.join(ran)+'\n')
     f.close()
 
-if __name__== 'main':
-    rand_str(200,4)
+if __name__ == '__main__':
+    num = 200
+    length = 5
+    random_num(num,length)
+
+
