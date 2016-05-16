@@ -1,0 +1,12 @@
+apple
+green
+blanat
+document
+hello
+python
+status
+training
+shop
+blog
+about
+
